@@ -1,2 +1,6 @@
----
-- include_tasks: install_deps.yml
+- name: Install k3s binaries
+  get_url:
+    url: "{{ k3s_bin_url }}"
+    dest: "/usr/local/bin/k3s"
+    mode: 0755
+  become: true

@@ -1,11 +1,4 @@
 ---
-- name: Install kubectl
-  get_url:
-    url: "{{ kubectl_bin_url }}"
-    dest: /usr/local/bin/kubectl
-    mode: 0755
-  become: true
-
 - name: Install k3s-server service
   copy:
     src: k3s-server.service
@@ -31,4 +24,3 @@
 - name: Save join token
   set_fact:
     k3s_join_token: "{{ found_join_token.stdout }}"
-

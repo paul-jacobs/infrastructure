@@ -8,7 +8,7 @@ Create a pm_credentials.ps1 and execute it :
 
 ```powershell
 $env:PM_API_URL="https://<node_ip>:8006/api2/json"
-$env:PM_USER="<api_user>" #example root@pam
+$env:PM_USER="<api_user>"
 $env:PM_PASS="<password>"
 ```
 
@@ -18,7 +18,7 @@ Create a pm_credentials.sh and execute it :
 
 ```shell
 export PM_API_URL="https://<node_ip>:8006/api2/json"
-export PM_USER="<api_user>" #example root@pam
+export PM_USER="<api_user>"
 export PM_PASS="<password>"
 ```
 

@@ -1,5 +1,4 @@
----
 - hosts: localhost
-  remote_user: root
+  remote_user: terraform
   roles:
     - k3s-master
